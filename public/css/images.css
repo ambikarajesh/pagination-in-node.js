@@ -1,0 +1,16 @@
+.item-list{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:80%;
+    margin:0 auto;
+}
+.list-item{
+    list-style: none;
+}
+.list-item > img {
+    border:3px solid #ccc;
+    border-radius: 5px 5px;
+}
+

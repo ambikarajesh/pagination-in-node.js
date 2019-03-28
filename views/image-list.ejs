@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title%></title>
+        <link rel="stylesheet" type="text/css" href="/css/images.css">
+    </head>
+    <body>
+        <h1>Galleries:</h1>
+        <% if(images.length>0){%>
+            <ul class='item-list'>
+                <% images.forEach(image=>{ %>
+                <li class='list-item'>
+                    <img src = '<%=image.image %>' src = '<%=image.name %>' height='250px' width="250px">
+                </li>
+                <% }) %>
+            </ul>
+        <% } else {%>
+            <h1> no image found</h1>
+            <% } %>
+       
+    </body>
+</html>
