@@ -14,17 +14,7 @@
                 </li>
                 <% }) %>
             </ul>
-            <div class='links'>
-                <% if(hasPrevPage || hasNextPage){ %>
-                    <div class='pages'>
-                        <% if(pages){ %>
-                            <% pages.forEach(page => { %>
-                                <a href ='<%= page.url %>' class = '<%= currentPage===page.number ? "active" : ""%>'><%=page.number %></a>
-                            <%})%>
-                        <%}%> 
-                    </div> 
-                <%}%>  
-            </div>         
+            <% include includes/pageLink %>       
         <% } else {%>
             <h1> no image found</h1>
         <% } %>
