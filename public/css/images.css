@@ -14,3 +14,25 @@
     border-radius: 5px 5px;
 }
 
+.links{
+    width:100%;
+    margin:50px 0;
+}
+.pages{
+    width:30%;
+    margin:0 auto;
+}
+.pages a{
+    text-decoration: none;
+    border:1px solid #ccc;
+    border-radius: 5px 5px;
+    padding:5px 10px;
+    margin:30px 10px;
+
+}
+.pages a:hover, .pages a:active, .pages a.active{
+    background-color: green;
+    color:#fff;
+}
+
+
